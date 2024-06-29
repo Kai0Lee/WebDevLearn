@@ -3,9 +3,32 @@
         <!--Don't techincally need utf-8 here but just for specification, and also its the commonly used one-->
         <meta charset="utf-8">
         <style>
-            p{
+            p.first{
                 color: blue;
-                font-size: 20px;
+            }
+            p.skib{
+                font-size: 150%;
+            }
+            .first{
+                color: gold;
+                font-size: 30px;
+            }
+            #section1 {
+                color:crimson;
+                font-size: 50px;
+            }
+            a:link, a:visited {
+                text-decoration: none;
+                color: lightblue;
+                margin-bottom: 5px;
+            }
+            a:hover, a:active {
+                background-color: cornflowerblue;
+                font-size: 60px;
+            }
+            body{
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
             }
         </style>
         <title>
@@ -35,11 +58,12 @@
                 on sigma
             </span>
         </div>
-        <a id = "section1">
+        <div id = "section1">
+            &#8287;
             yes
-        </a>
+        </div>
         <h2> <a href = "https://www.youtube.com/watch?v=PaJjpOmE-7k&list=RDPaJjpOmE-7k&start_radio=1" target = _blank title = "skibidi">SKIBIDI</a> </h2>
-        <section>
+        <section class = "first">
             <article>Skibodee</article>
         </section>
         <section>
@@ -48,7 +72,7 @@
         <aside>
             aside
         </aside>
-        <p>
+        <p class="first skib" >
             Skibidi skibidi skibidi
         </p>
         <ul>
