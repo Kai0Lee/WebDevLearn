@@ -2,6 +2,7 @@
     <head>
         <!--Don't techincally need utf-8 here but just for specification, and also its the commonly used one-->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             *{
                 box-sizing: border-box;
@@ -47,6 +48,44 @@
                 height: 500px;
                 width: 500px;
             }
+            .blink{
+                width: 500px;
+                height: 200px;
+                background-color: red;
+            }
+            .table{
+                float:left;
+                height:250px;
+                outline: 5px solid black;
+                width:100%;
+                padding:25px;
+                /* margin:1%; */
+            }
+            @media (min-width: 1200px)
+            {
+                .box{
+                    width:50px;
+                    height:50px;
+                    
+                }
+                .table{
+                    width:23%;
+                }
+
+            }
+            @media (min-width:900px) and (max-width: 1199px)
+            {
+                .table{
+                    width:47%;
+                }
+            }
+            
+            
+            div p{
+                background-color: white;
+                height:150px;
+            }
+
         </style>
         <title>
             Erm what the sigma
@@ -79,7 +118,7 @@
             &#8287;
             yes
         </div>
-        <h2> <a href = "https://www.youtube.com/watch?v=PaJjpOmE-7k&list=RDPaJjpOmE-7k&start_radio=1" target = _blank title = "skibidi">SKIBIDI</a> </h2>
+        <h2> <a href = "https://www.youtube.com/watch?v=PaJjpOmE-7k&list=RDPaJjpOmE-7k&start_radio=1" target = "_blank" title = "skibidi">SKIBIDI</a> </h2>
         <section class = "first">
             <article>Skibodee</article>
         </section>
@@ -100,11 +139,15 @@
                 </ul>
             </li>
         </ul>
-        <a href = "https://www.youtube.com/watch?v=mFzFHH_rPI4" target = _blank>
+        <a class="blink" href = "https://www.youtube.com/watch?v=mFzFHH_rPI4" target="_blank">
             <div class = "box">
                 sussy skibiii
             </div>
         </a>
         <img src = "https://healthjade.com/wp-content/uploads/2017/10/apple-fruit.jpg" width="1500" height="1749" alt="Picture">
+        <div class="table-one table"><p>One</p></div>
+        <div class="table-two table"><p>Two</p></div>
+        <div class="table-three table"><p>Three</p></div>
+        <div class="table-four table"><p>Four</p></div>
     </body>
 </html>
